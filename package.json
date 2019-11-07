@@ -1,0 +1,30 @@
+{
+  "name": "animalfacts",
+  "version": "1.0.0",
+  "description": "This is an app that will teach you a bit about animals when you click on them.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "build": "parcel build index.html ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\u001b[A\u001b[B"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-react": "^7.7.0"
+  }
+}
