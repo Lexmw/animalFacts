@@ -1,4 +1,9 @@
-This is an app created to teach awesome animal facts. It is a simple choose and show structure where you choose the animal and it will reveal facts about that animal. I created it so that my little sister could learn about cool animals on the computer.
+# Animal Facts
 
-technologies used in this project:
-react, express node.js
+This is a collection of Animal Flash Cards and a quiz that can be used to teach awesome animal facts! I created this as a way to practice creating fun tools that kids can play and learn with at the same time. My youngest sister was the inspiration for the creation of this simple web app.
+
+## Technologies used in this project:
+react, parcel, express, node.js
+
+## Install
+`` $npm install
