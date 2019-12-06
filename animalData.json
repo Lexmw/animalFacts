@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Bengal Tiger",
+        "habitat": "Forests of India, and Other parts of asia",
+        "food": "Bengal Tigers are carnivors. They eat small mammals,  pacaderms, and rodents",
+        "status": "Endangered: threatened"
+    },
+    {
+        "name": "Mantis Shrimp",
+        "habitat": "Shallow waters of the Indian and Pacific Oceans",
+        "food": "Manits Shrimp eat different worms and small fish",
+        "status": "Not Threatened",
+        "fun-fact": "Mantis shrimps have the most complex eyes in the animal kingdom that can see ultraviolet and polarized light. They have trinocular vision which means that they can see one objects using one of the three different parts of eye.",
+        "citation":""
+    },
+    {
+        "name": "",
+        "habitat": "",
+        "food": "",
+        "status": "",
+        "fun-fact":"",
+        "citation":""
+    },
+    {
+        "name": "",
+        "habitat": "",
+        "food": "",
+        "status": ""
+    }
+]
