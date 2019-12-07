@@ -1,12 +1,14 @@
 [
     {
         "name": "Bengal Tiger",
+        "image":"https://www.tigers-world.com/wp-content/uploads/Bengal.jpg",
         "habitat": "Forests of India, and Other parts of asia",
         "food": "Bengal Tigers are carnivors. They eat small mammals,  pacaderms, and rodents",
         "status": "Endangered: threatened"
     },
     {
         "name": "Mantis Shrimp",
+        "image":"https://assets.answersingenesis.org/img/articles/am/v13/n6/mantis-shrimp2.jpg",
         "habitat": "Shallow waters of the Indian and Pacific Oceans",
         "food": "Manits Shrimp eat different worms and small fish",
         "status": "Not Threatened",
@@ -14,17 +16,21 @@
         "citation":""
     },
     {
-        "name": "",
-        "habitat": "",
-        "food": "",
-        "status": "",
-        "fun-fact":"",
-        "citation":""
+        "name": "Aye Aye",
+        "image":"http://cdn.sci-news.com/images/enlarge3/image_4041_2e-Slow-Loris.jpg",
+        "habitat": "This is a Habitat",
+        "food": "They eat insects fruits and flowers",
+        "status": "non endangerd",
+        "fun-fact":"they can see in the night",
+        "citation":"N/a"
     },
     {
-        "name": "",
-        "habitat": "",
-        "food": "",
-        "status": ""
+        "name": "Ogre Spider",
+        "image":"https://i.redd.it/89jvxfdwn1iz.jpg",
+        "habitat": "They live in the jungle",
+        "food": "they eat bugs and small rodents",
+        "status": "non endangered",
+        "fun-fact":"they use their web to catch their prey",
+        "citation":"n/a"
     }
 ]

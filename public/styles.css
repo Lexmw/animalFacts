@@ -1,16 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Special+Elite&display=swap');
+
 body{
     height: 100vh;
-    background-color: yellowgreen;
+    background-color: forestgreen;
     /* background-image: url('https://www.telegraph.co.uk/content/dam/Travel/2018/September/El-Yunque-morning-mist-iStock-535499464.jpg?imwidth=450'); */
     background-size: contain;
     /* the color needs to be muted */
     /* the picture needs to be smaller */
 }
 
+#header{
+  padding: 10px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 20%;
+  grid-gap: 140px;
+  width: 84%;
+}
 
-#container{
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#button-holder{
+  display: grid;
+  align-content: center;
+}
+
+#title{
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  color: white;
+  font-size: 65px;
+}
+
+.flashcards {
     display: flex;
     flex-wrap: vertical;
+    justify-content: center;
 }
 
 #bengal-tiger {
@@ -42,8 +86,9 @@ that the flip itself goes out of the box on hover
  
 .flip-card {
     background-color: transparent;
-    width: 250px;
-    height: 300px;
+    width: 20vw;
+    height: 30vh;
+    margin: 10px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -83,6 +128,9 @@ that the flip itself goes out of the box on hover
     color: white;
     transform: rotateY(180deg);
     font-size: 15px;
+    height: 200px;
   }
+
+  /* this is gonna be useful when you want to make the button on the quiz fun https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
   
 

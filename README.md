@@ -6,4 +6,4 @@ This is a collection of Animal Flash Cards and a quiz that can be used to teach 
 react, parcel, express, node.js
 
 ## Install
-`` $npm install
+$npm install
