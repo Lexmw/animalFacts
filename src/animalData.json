@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Bengal Tiger",
+        "image":"https://www.tigers-world.com/wp-content/uploads/Bengal.jpg",
+        "habitat": "Forests of India, and Other parts of asia",
+        "food": "Bengal Tigers are carnivors. They eat small mammals,  pacaderms, and rodents",
+        "status": "Endangered: threatened"
+    },
+    {
+        "name": "Mantis Shrimp",
+        "image":"https://assets.answersingenesis.org/img/articles/am/v13/n6/mantis-shrimp2.jpg",
+        "habitat": "Shallow waters of the Indian and Pacific Oceans",
+        "food": "Manits Shrimp eat different worms and small fish",
+        "status": "Not Threatened",
+        "fun-fact": "Mantis shrimps have the most complex eyes in the animal kingdom that can see ultraviolet and polarized light. They have trinocular vision which means that they can see one objects using one of the three different parts of eye.",
+        "citation":""
+    },
+    {
+        "name": "Aye Aye",
+        "image":"http://cdn.sci-news.com/images/enlarge3/image_4041_2e-Slow-Loris.jpg",
+        "habitat": "This is a Habitat",
+        "food": "They eat insects fruits and flowers",
+        "status": "non endangerd",
+        "fun-fact":"they can see in the night",
+        "citation":"N/a"
+    },
+    {
+        "name": "Ogre Spider",
+        "image":"https://i.redd.it/89jvxfdwn1iz.jpg",
+        "habitat": "They live in the jungle",
+        "food": "they eat bugs and small rodents",
+        "status": "non endangered",
+        "fun-fact":"they use their web to catch their prey",
+        "citation":"n/a"
+    },
+    {
+        "name": "Platypus",
+        "image":"https://gifts.worldwildlife.org/gift-center/Images/large-species-photo/large-Duck-billed-Platypus-photo.jpg",
+        "habitat": "These animals live in autrailian freshwater rivers",
+        "food": "They scoop up insects and larvae, shellfish, and worms in their bill along with bits of gravel and mud from the bottom",
+        "status": "Endangered",
+        "fun-fact":"Males are also venomous. They have sharp stingers on the heels of their rear feet and can use them to deliver a strong toxic blow to any foe.",
+        "citation":"https://www.nationalgeographic.com/animals/mammals/p/platypus/"
+    },
+    {
+        "name": "Coyote",
+        "image":"https://cdn.abcotvs.com/dip/images/5725090_112819-wabc-njcoyotewarning-img.jpg?w=1280&r=16%3A9",
+        "habitat": "They live in cities like Los Angeles, and can be found in most of North America",
+        "food": "They hunt rodents, fish, frogs, deer, insects, snakes, fruit and even grass",
+        "status": "Least Concern",
+        "fun-fact":"Coyotes are formidable in the field where they enjoy keen vision and a strong sense of smell. They can run up to 40 miles an hour. ",
+        "citation":"https://www.nationalgeographic.com/animals/mammals/c/coyote/"
+    },
+    {
+        "name": "Axolotl",
+        "image":"https://static.scientificamerican.com/sciam/cache/file/766BFBD4-F8A1-4B7D-8416A370010B5A88_source.jpg?w=390&h=520&5A61F7C0-0DAE-410B-90ECB88BDF9CF3FC",
+        "habitat": "A Salamander in found in the ponds and canals of Mexico City",
+        "food": "They eat mollusks, worms, insect larvae, crustaceans, and some fish.",
+        "status": "Critically Endangered",
+        "fun-fact":"According to legend, this “water monster” was a god who disguised himself as a salamander to avoid sacrifice.",
+        "citation":"nationalgeographic.com/animals/amphibians/a/axolotl/"
+    }    
+]
