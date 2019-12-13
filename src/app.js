@@ -3,9 +3,9 @@ import {
   HashRouter as Router, 
   Route 
 } from 'react-router-dom';
-import FlashCardDeck from './flashCardDeck'
+import FlashCardDeck from './flashcardComps/flashCardDeck'
 import Transition from './transitionPage'
-import Quizlet from './quiz'
+import Quizlet from './quizComps/quiz'
 
 
 
