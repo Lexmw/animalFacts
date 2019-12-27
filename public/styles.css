@@ -250,12 +250,52 @@ width: 250px;
   outline:none;
 }
 
-.results span.correct {
+.correct {
   color: #c8ffbb;
 }
 
-.results span.failed {
+.failed {
   color: #f27c7c;
 }
 /* #endregion Quiz Page */
+
+/* #region Quiz Results Page */
+#results-header {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+  width: 60%;
+}
+#score{
+  color: orange;
+  border: dotted blue 3px;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  height: 100px;
+  margin-top: 20px;
+}
+
+#results-holder {
+  display: flex;
+  justify-content: center;
+  border: solid orange 3px;
+  height:40%; 
+  width:50%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+#button-holder {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+
+/* #endregion Quiz Results Page */
 
