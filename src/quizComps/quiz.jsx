@@ -11,7 +11,6 @@ export default function Quizlet() {
   const [answers, setAnswers] = useState([]);
   const [showResults, setShowResults] = useState(false);
   const [error, setError] = useState('');  
-  
   const question = questions[currentQuestion];
   
   
@@ -26,6 +25,8 @@ export default function Quizlet() {
     }
   return <div className='error'>{error}</div>
   }
+
+
   const submit = () => {
       const answer = {questionId: question.id, answer: currentAnswer}
       if(!currentAnswer){
@@ -46,19 +47,21 @@ export default function Quizlet() {
   };
 
   let score = 0;
-
+  
   const renderResultMark = (question, answer) => {
       if(question.correct_answer === answer.answer){
         score += 1;
-      return <span className='correct'>Correct</span>
+        console.log('this is the score', score)
+        return <span className='correct'>Correct</span>
+    } else {
+        score += 0;
+        return <span className='failed'>failed {question.correct_answer}</span>
     }
-      score += 0;
-  return <span className='failed'>failed {question.correct_answer}</span>
   }
 
   const showScore = () => {
-    console.log('this is the object I am working with', score);
-  return <h2>{score} / {questions.length}</h2>
+    console.log('this is the updated score', score);
+    return <h2>{score}/{questions.length}</h2>
   }
 
   const renderResultsData = () => {
@@ -79,6 +82,7 @@ export default function Quizlet() {
     setCurrentQuestion(0);
     setCurrentAnswer('');
     setShowResults(false);
+    setScore(0);
   };
 
   if(showResults) {
@@ -94,15 +98,15 @@ export default function Quizlet() {
         </div>
 
         <div id='button-holder'>
-          <Link><button onClick={restart}> Restart</button></Link>
-          <Link to='/'><button> Return to FlashCards </button></Link> 
+          <Link><button className='quiz-buttons' onClick={restart}> Restart</button></Link>
+          <Link to='/'><button className='quiz-buttons'> Return to FlashCards </button></Link> 
         </div>
       </div>
     )
-  } else{}
+  }
   return (
     <div>
-      <div id="header">
+      <div id="quiz-header">
         <div>
           <h1 className="title">The Quiz!</h1>
         </div>
@@ -117,7 +121,7 @@ export default function Quizlet() {
           currentAnswer={currentAnswer}
           handleClick={handleClick}
         />
-        <button onClick={submit}> Submit </button>
+        <button className='quiz-buttons' onClick={submit}> Submit </button>
       </div>
     </div>
   );
