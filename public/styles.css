@@ -266,6 +266,14 @@ width: 250px;
 /* #endregion Quiz Page */
 
 /* #region Quiz Results Page */
+
+#quiz-header{
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0px;
+  width: 60%;
+}
 #results-header {
   margin: auto;
   display: grid;
@@ -298,10 +306,14 @@ width: 250px;
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  font-size: 18px;
 }
 
-
+.quiz-buttons{
+  font-size: 20px;
+  margin: 20px;
+  background-color: palegoldenrod;
+  box-sizing: border-box;
+}
 
 /* #endregion Quiz Results Page */
 
