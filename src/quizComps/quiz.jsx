@@ -36,6 +36,7 @@ export default function Quizlet() {
       answers.push(answer);
       setAnswers(answers);
       setCurrentAnswer('');
+      setError('');
 
       if(currentQuestion + 1 < questions.length){
         setCurrentQuestion(currentQuestion + 1);
