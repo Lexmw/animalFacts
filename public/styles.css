@@ -23,6 +23,12 @@ margin: 3px;
 font-size: 13px;
 }
 
+#footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 /* #endregion global variables*/
 
 /* #region flashcard Deck header*/

@@ -54,7 +54,7 @@ export default function Quizlet() {
       return <span className='correct'>Correct</span>
     }
       score += 0;
-  return <span className='failed'>failed {question.correct_answer}</span>
+  return <span className='failed'>Failed </span>
   }
 
   const showScore = () => {

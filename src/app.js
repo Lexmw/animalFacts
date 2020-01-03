@@ -19,12 +19,7 @@ export default class App extends React.Component {
          <Route path='/takethequiz' component={Transition} />
          <Route path='/Quiz' component={ Quizlet }/>
       </Router>
-      <div>
-        <p>
-            Made By Lexius Waltar 12/2019 |
-            See Learning Can be Fun!
-        </p>
-      </div>
+      
       </div>
      
     );
