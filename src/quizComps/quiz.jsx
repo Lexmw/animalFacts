@@ -54,12 +54,12 @@ export default function Quizlet() {
       return <span className='correct'>Correct</span>
     }
       score += 0;
-    return <span className='failed'>failed</span>
+  return <span className='failed'>failed {question.correct_answer}</span>
   }
 
   const showScore = () => {
     console.log('this is the object I am working with', score);
-  return <div>{score} / {questions.length}</div>
+  return <h2>{score} / {questions.length}</h2>
   }
 
   const renderResultsData = () => {
@@ -85,11 +85,19 @@ export default function Quizlet() {
   if(showResults) {
     return (
       <div>
-          <h2>Results</h2>
+        <div id='results-header'>
+          <h1 className='title'>Results</h1>
+          <div id='score'>{showScore()}</div>
+        </div>
+
+        <div id='results-holder'>
           <ul>{renderResultsData()}</ul>
-          <div>{showScore()}</div>
-          <button onClick={restart}> Restart</button>
-         <Link to='/'><button> Return to FlashCards </button></Link> 
+        </div>
+
+        <div id='button-holder'>
+          <Link><button onClick={restart}> Restart</button></Link>
+          <Link to='/'><button> Return to FlashCards </button></Link> 
+        </div>
       </div>
     )
   } else{}
