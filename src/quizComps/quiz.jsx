@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Progress from "./Progress";
 import Question from "./Question";
@@ -10,55 +10,64 @@ export default function Quizlet() {
   const [currentAnswer, setCurrentAnswer] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [showResults, setShowResults] = useState(false);
-  const [error, setError] = useState('');  
-  
+  const [error, setError] = useState('');
   const question = questions[currentQuestion];
-  
-  
+
+
   const handleClick = e => {
     setCurrentAnswer(e.target.value);
-    console.log('this is clicked and the current answer is,'+ e.target.value)
+    console.log('this is clicked and the current answer is,' + e.target.value)
   };
 
   const renderError = () => {
-    if(!error){
+    if (!error) {
       return;
     }
-  return <div className='error'>{error}</div>
+    return <div className='error'>{error}</div>
   }
+
+
   const submit = () => {
-      const answer = {questionId: question.id, answer: currentAnswer}
-      if(!currentAnswer){
-        setError('Please Select an Option');
-        return;
-      }
+    const answer = { questionId: question.id, answer: currentAnswer }
+    if (!currentAnswer) {
+      setError('Please Select an Option');
+      return;
+    }
 
-      answers.push(answer);
-      setAnswers(answers);
-      setCurrentAnswer('');
+    answers.push(answer);
+    setAnswers(answers);
+    setCurrentAnswer('');
 
-      if(currentQuestion + 1 < questions.length){
-        setCurrentQuestion(currentQuestion + 1);
-        return;
-      }
+    if (currentQuestion + 1 < questions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+      return;
+    }
 
-      setShowResults(true);
+    setShowResults(true);
   };
 
-  let score = 0;
-
   const renderResultMark = (question, answer) => {
-      if(question.correct_answer === answer.answer){
-        score += 1;
-      return <span className='correct'>Correct</span>
+
+    if (question.correct_answer === answer.answer) {
+      return (<span className='correct'>Correct</span>)
+    } else {
+      return (<span className='failed'>Failed</span>)
     }
-      score += 0;
-  return <span className='failed'>failed {question.correct_answer}</span>
   }
 
   const showScore = () => {
-    console.log('this is the object I am working with', score);
-  return <h2>{score} / {questions.length}</h2>
+    let newScore = [];
+
+    answers.map(answer => {
+      const question = questions.find(question => question.id === answer.questionId);
+
+      if (question.correct_answer === answer.answer) {
+        newScore.push('correct');
+        return newScore
+      }
+    })
+
+    return <h2>{newScore.length} / {questions.length}</h2>
   }
 
   const renderResultsData = () => {
@@ -81,7 +90,7 @@ export default function Quizlet() {
     setShowResults(false);
   };
 
-  if(showResults) {
+  if (showResults) {
     return (
       <div>
         <div id='results-header'>
@@ -94,15 +103,15 @@ export default function Quizlet() {
         </div>
 
         <div id='button-holder'>
-          <Link><button onClick={restart}> Restart</button></Link>
-          <Link to='/'><button> Return to FlashCards </button></Link> 
+          <Link><button className='quiz-buttons' onClick={restart}> Restart</button></Link>
+          <Link to='/'><button className='quiz-buttons'> Return to FlashCards </button></Link>
         </div>
       </div>
     )
-  } else{}
+  }
   return (
     <div>
-      <div id="header">
+      <div id="quiz-header">
         <div>
           <h1 className="title">The Quiz!</h1>
         </div>
@@ -111,13 +120,13 @@ export default function Quizlet() {
       <div id="quiz-container">
         <Progress total={questions.length} current={currentQuestion + 1} />
         <Question question={question.question} />
-          {renderError()}
+        {renderError()}
         <Answers
           question={question}
           currentAnswer={currentAnswer}
           handleClick={handleClick}
         />
-        <button onClick={submit}> Submit </button>
+        <button className='quiz-buttons' onClick={submit}> Submit </button>
       </div>
     </div>
   );
